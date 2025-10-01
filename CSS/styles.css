@@ -226,9 +226,9 @@ main h1, main h2 {
 .hidden-img {
     position: absolute;
     left: 50%;
-    bottom: -90px;
+    bottom: -70px;
     transform: translateX(-50%);
-    width: 120px;
+    width: 70px;
     height: auto;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
@@ -237,6 +237,7 @@ main h1, main h2 {
 .competences li:hover .hidden-img {
     opacity: 1;
     bottom: 10px;
+    transform: translateX(-50%) scale(1.1);
 }
 
 /* Projets / Expérience / Centres d’intérêt */
