@@ -1,8 +1,8 @@
 /* Style du corps */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #fad0c4, #ff6a00);
-    color: #333;
+    background: #f4f4f4;
+    color: #222;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Barre de navigation */
 nav {
-    background: linear-gradient(to right, #7129e4, #09dfee);
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
     padding: 10px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -35,16 +35,17 @@ nav ul li a {
 
 nav ul li a:hover {
     border-radius: 5px;
-    transform: scale(1.1);
+    background: #1e40af;
+    transform: scale(1.05);
 }
 
 /* En-tête */
 header {
-    background: linear-gradient(to right, #7129e4, #09dfee);
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
     color: white;
     text-align: center;
     padding: 20px;
-    border-bottom: 5px solid #ff6a00;
+    border-bottom: 5px solid #2563eb;
 }
 
 /* Contenu principal */
@@ -53,7 +54,7 @@ main {
     margin: 20px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -66,7 +67,7 @@ header h1 {
 }
 
 h1, h2 {
-    color: #333;
+    color: #222;
     margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
@@ -80,7 +81,7 @@ ul {
 
 ul li {
     padding: 10px;
-    background: #ff6a00;
+    background: #2563eb;
     color: white;
     margin: 5px 0;
     border-radius: 5px;
@@ -89,26 +90,26 @@ ul li {
 }
 
 ul li:hover {
-    transform: scale(1.05);
+    background: #1e40af;
 }
 
 /* Liens */
 a {
-    color: #ff6a00;
+    color: #2563eb;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #2379e9;
+    color: #ffffff;
 }
 
 /* Effet dynamique sur les sections */
 section {
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-left: 5px solid #ff6a00;
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid #2563eb;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -127,7 +128,7 @@ main, nav, header {
 #listeIT {
     font-weight: bold;
     text-decoration: underline;
-	transform: none !important; 
+    transform: none !important; 
 }
 
 main h1, main h2 {
@@ -140,16 +141,16 @@ main h1, main h2 {
 
 #LIAB {
     font-weight: bold;
-	transform: none !important; 
+    transform: none !important; 
 }
 
 #liPR {
     font-weight: bold;
     text-decoration: underline;
-	transform: none !important; 
+    transform: none !important; 
 }
 
-/* Style pour la section Présentation */
+/* Présentation */
 .presentation {
     display: flex;
     align-items: center;
@@ -158,11 +159,11 @@ main h1, main h2 {
     margin: 20px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-/* Style pour la photo de profil */
+/* Photo de profil */
 .profil-img {
     width: 200px;
     height: 200px;
@@ -171,7 +172,7 @@ main h1, main h2 {
     margin-left: 20px;
 }
 
-/* Style pour le texte de présentation */
+/* Texte de présentation */
 .presentation div:first-child {
     flex: 1;
 }
@@ -203,33 +204,31 @@ main h1, main h2 {
     height: auto;
 }
 
-/* Style pour la liste des compétences */
+/* Compétences */
 .competences li {
     padding: 10px;
-    background: #ff6a00;
+    background: #2563eb;
     color: white;
     margin: 5px 0;
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.competences li {
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
 }
 
 .competences li:hover {
-    padding-bottom: 100px; /* Ajustement léger pour l'agrandissement */
+    background: #1e40af;
+    padding-bottom: 100px;
+    transition: all 0.4s ease-in-out;
 }
 
 .hidden-img {
     position: absolute;
     left: 50%;
-    bottom: -90px; /* Ajustement pour bien positionner l'image */
+    bottom: -90px;
     transform: translateX(-50%);
-    width: 120px; /* Augmentation de la taille */
+    width: 120px;
     height: auto;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
@@ -237,61 +236,35 @@ main h1, main h2 {
 
 .competences li:hover .hidden-img {
     opacity: 1;
-    bottom: 10px; /* Ajustement pour que l'image apparaisse bien */
+    bottom: 10px;
 }
 
-.project-section {
+/* Projets / Expérience / Centres d’intérêt */
+.project-section,
+.experience-section,
+.interest-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
-.project-text {
-	flex: 1;
-}
-
-.project-section img {
-	width: 150px;
-	height: auto;
-	border-radius: 5px;
-}
-
-.experience-section {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 20px;
-}
-
-.experience-text {
-	flex: 1;
-}
-
-.experience-section img {
-	width: 150px;
-	height: auto;
-	border-radius: 5px;
-}
-
-.interest-section {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 20px;
-	margin-bottom: 20px;
-}
-
+.project-text,
+.experience-text,
 .interest-text {
-	flex: 1;        
+    flex: 1;
 }
 
+.project-section img,
+.experience-section img,
 .interest-section img {
-   	width: 150px;
-	height: auto;
-	border-radius: 5px;
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
 }
 
+/* LinkedIn */
 .linkedin-section {
     display: flex;
     align-items: center;
