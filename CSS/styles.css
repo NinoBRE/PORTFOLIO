@@ -311,7 +311,7 @@ main h1, main h2 {
 }
 
 /* IMPORTANT : empêche la case active de changer au survol */
-.present :hover {
+.present a:hover {
     background-color: #ffffff !important;
     color: #2563eb !important;
     transform: none !important;   /* pas d’effet de zoom sur l’actif */
