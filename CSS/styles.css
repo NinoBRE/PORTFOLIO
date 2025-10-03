@@ -295,7 +295,7 @@ main h1, main h2 {
     object-fit: cover;
 }
 
-.present a {
+.present li {
   color: #ffffff;         
   background-color: #007bff; 
   font-weight: bold;       
@@ -304,6 +304,6 @@ main h1, main h2 {
   text-decoration: none;  
 }
 
-.present a:hover {
+.present li:hover {
   background-color: #0056b3; 
 }
