@@ -294,3 +294,7 @@ main h1, main h2 {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.present{
+    color: white;
+}
