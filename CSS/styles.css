@@ -29,14 +29,16 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 8px 15px;
-    transition: all 0.3s ease-in-out;
+    padding: 12px 20px;         /* Taille uniforme et équilibrée */
+    border-radius: 8px;         /* Coins arrondis */
+    display: inline-block;      /* Limite la zone de scale */
+    transition: all 0.2s ease-in-out;
 }
 
 nav ul li a:hover {
-    border-radius: 5px;
     background: #1e40af;
-    transform: scale(1.05);
+    transform: scale(1.1);      /* Agrandissement léger et propre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* En-tête */
@@ -124,7 +126,7 @@ main, nav, header {
     animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Partie personnalisée que tu voulais garder */
+/* Partie personnalisée */
 #listeIT {
     font-weight: bold;
     text-decoration: underline;
@@ -295,8 +297,10 @@ main h1, main h2 {
     object-fit: cover;
 }
 
+/* Onglet actif */
 .present {
   background-color: #ffffff;          
+  border-radius: 8px;
 }
 
 .present a {
@@ -304,12 +308,10 @@ main h1, main h2 {
   font-weight: bold;
   text-decoration: none;
   display: block;              
-  padding: 15px 25px;          
+  padding: 12px 20px;          
 }
 
-.present :hover{
-   color: white; 
-}
-.present a:hover{
+.present a:hover {
     text-decoration: underline;
+    color: #000;
 }
