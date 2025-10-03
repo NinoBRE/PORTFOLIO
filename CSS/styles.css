@@ -28,8 +28,8 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 12px 20px;         /* Taille uniforme et équilibrée */
+    font-size: 16px;
+    padding: 8px 15px;         /* Taille uniforme et équilibrée */
     border-radius: 8px;         /* Coins arrondis */
     display: inline-block;      /* Limite la zone de scale */
     transition: all 0.2s ease-in-out;
@@ -37,7 +37,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #1e40af;
-    transform: scale(1.1);      /* Agrandissement léger et propre */
+    transform: scale(1.05);      /* Agrandissement léger et propre */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -297,21 +297,23 @@ main h1, main h2 {
     object-fit: cover;
 }
 
-/* Onglet actif */
 .present {
-  background-color: #ffffff;          
-  border-radius: 8px;
+    background-color: #2563eb;   /* reste bleu comme les autres */
+    border-radius: 8px;
 }
 
 .present a {
-  color: #1a1a1a;              
-  font-weight: bold;
-  text-decoration: none;
-  display: block;              
-  padding: 12px 20px;          
+    color: #ffffff;             /* texte blanc */
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;          /* même taille que les autres */
 }
 
+/* IMPORTANT : empêche la case active de changer au survol */
 .present a:hover {
-    text-decoration: underline;
-    color: #000;
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    transform: none !important;   /* pas d’effet de zoom sur l’actif */
+    text-decoration: none;
 }
