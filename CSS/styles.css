@@ -525,3 +525,8 @@ main, nav, header, section, .presentation {
         max-width: 100%;
     }
 }
+
+.navbar{
+    position:fixe;
+    top:0;
+}
